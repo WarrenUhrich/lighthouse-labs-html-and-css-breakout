@@ -1,1 +1,3 @@
-# lighthouse-labs-html-and-css-breakout
+# Lighthouse Labs | HTML and CSS Breakout
+
+
