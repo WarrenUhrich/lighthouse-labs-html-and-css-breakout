@@ -68,6 +68,43 @@ h1 {
     width: 10rem;
     height: calc(100vh - 1.5rem);
     background-color: #444;
+    position: relative;
+}
+
+#channels h2 {
+    height: 1.7rem;
+    border-bottom: 2px solid #222;
+}
+
+#channels > ul {
+    list-style: none;
+    max-height: calc(100% - 1.7rem - 1.7rem);
+    padding: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#channels footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 1.7rem;
+    padding: 0.25rem 0.5rem;
+    background-color: #333;
+    position: absolute;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+#channels footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
 }
 
 /**********************************************************
