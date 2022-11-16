@@ -1,0 +1,105 @@
+html {
+    color: black;
+    background-color: white;
+}
+
+/* Website heading */
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Navigation */
+
+nav {
+    background-color: midnightblue;
+    position: sticky; /* Only sticks once it hits the viewport edge */
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block; /* Change to block so we can use padding! */
+    color: lightgray;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+    background-color: rebeccapurple;
+}
+
+/* How it Works section */
+
+#how-it-works {
+    width: 90%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+#how-it-works li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+}
+
+#how-it-works img {
+    width: 200px;
+    /* height: 200px; */
+    margin-right: 2rem;
+}
+
+/* Contact section */
+
+#contact {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: bisque;
+}
+
+#contact h2 {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#contact address,
+#contact form {
+    box-sizing: border-box;
+    width: 50%;
+}
+
+#contact address a {
+    display: block;
+    margin-top: 1rem;
+}
+
+#contact form {
+    padding: 1rem;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#contact label,
+#contact input,
+#contact textarea {
+    display: block;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+}
