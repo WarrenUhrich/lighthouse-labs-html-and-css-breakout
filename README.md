@@ -5,7 +5,7 @@
 * [ ] Common Elements
 * [ ] External Stylesheets
 * [ ] External Scripts
-* [ ] 
+* [ ] Building a (Front-end Only) Web Page
 
 ## Common Elements
 
@@ -125,6 +125,35 @@ changeMeP.textContent = 'Hello, World!';
 ```
 
 Amazing; we did it!
+
+## Semantics when there is no Visual Space
+
+In an attempt to make our pages more organized and accessible, we may aim to include headings (H1-H6) throughout every discernable piece of our website... this however, may not fit the look we have in mind—there may even be parts that are intuitive without headings in visual context, that might not from the perspective of a screen reader. How do we deal with this sort of situation?
+
+One instinct might be to jump to "invisible" headings. You might consider:
+
+* `font-size: 0;`
+* `color: transparent;`
+
+This would effectively hide your text! However... **search engines and some savvy accessibility tools will ignore your content altogether if you use styles like these!**
+
+It is much better to use tried and true approaches, [like what WordPress cooked up](https://make.wordpress.org/accessibility/handbook/markup/the-css-class-screen-reader-text/):
+
+```CSS
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+```
 
 ## Building a (Front-end Only) Web Page
 
