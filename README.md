@@ -1,11 +1,11 @@
 # Lighthouse Labs | HTML and CSS Breakout
 
-[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-html-and-css-breakout/tree/2022.11.16-web-flex-19sept2022)
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-html-and-css-breakout/tree/2022.11.16-web-flex-19sept2022) | [Vimeo Video Recording](https://vimeo.com/771815780/ba1fac59cc)
 
-* [ ] Common Elements
-* [ ] External Stylesheets
-* [ ] External Scripts
-* [ ] Building a (Front-end Only) Web Page
+* [X] Common Elements
+* [X] External Stylesheets
+* [X] External Scripts
+* [X] Building a (Front-end Only) Web Page
 
 ## Common Elements
 
@@ -173,6 +173,8 @@ It is a good idea to use a stylesheet designed to combat browser defaults and gi
 * [10+ [...] Reset Stylesheets](https://cssauthor.com/css-reset-stylesheets/)
 * [HTML5 Reset Stylesheet (HTML5 Doctor)](http://html5doctor.com/html-5-reset-stylesheet/)
 * [Reset CSS (Meyer Web)](https://meyerweb.com/eric/tools/css/reset/)
+
+![Wireframe](https://raw.githubusercontent.com/WarrenUhrich/lighthouse-labs-html-and-css-breakout/2022.11.16-web-flex-19sept2022/WIREFRAME.png)
 
 ## HTML Essentials
 
