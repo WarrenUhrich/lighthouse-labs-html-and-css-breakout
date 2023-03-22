@@ -1,0 +1,43 @@
+/**
+ * 1. Order matters - last rule of equal specifity wins.
+ * 2. More specific rule wins.
+ */
+
+ul {
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+
+
+/**
+ * 1. Order matters - last rule of equal specifity wins.
+ * 2. More specific rule wins.
+ */
+
+#purple-text {
+    color: purple;
+}
+
+.green-text {
+    color: green;
+}
+
+p {
+    color: red;
+}
+
+/**
+ * For our click event:
+ */
+
+.italic-text {
+    font-style: italic;
+}
