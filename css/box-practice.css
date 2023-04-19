@@ -1,0 +1,74 @@
+/**
+ * 1. Specificity
+ * 2. Last Rule Wins (if same specificity)
+ */
+
+html, body {
+    background-color: salmon;
+}
+
+ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+li {
+    height: 300px;
+    background-color: teal;
+    margin-bottom: 32px;
+}
+
+@media screen and (min-width: 380px) {
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    li {
+        width: calc(50% - 16px); /* 2 * 16 = 32px */
+    }
+
+    li:nth-of-type(even) {
+        margin-left: 32px;
+    }
+
+}
+
+@media screen and (min-width: 580px) {
+
+    li {
+        width: calc((100% / 3) - 8px);
+    }
+
+    li:nth-of-type(even) {
+        margin-left: 0;
+    }
+
+    li:nth-of-type(3n+2),
+    li:nth-of-type(3n+3) {
+        margin-left: calc(24px / 2);
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+
+    li {
+        width: calc((100% / 4) - 8px);
+    }
+
+    li:nth-of-type(even),
+    li:nth-of-type(3n+2),
+    li:nth-of-type(3n+3) {
+        margin-left: 0;
+    }
+
+    li:nth-of-type(4n+2),
+    li:nth-of-type(4n+3),
+    li:nth-of-type(4n+4) {
+        margin-left: calc(32px / 3);
+    }
+
+}
