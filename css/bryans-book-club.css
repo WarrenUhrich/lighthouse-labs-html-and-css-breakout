@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box; /* instead of default box-model, width becomes INCLUSIVE of padding and border */
+}
+
+h1 {
+    width: 200px; /* 200px wide ONLY IF box-sizing: border-box; */
+    padding: 16px;
+    border: 16px solid black;
+}
+
+ol {
+    list-style: none;
+}
+
+.upcoming-books-list li {
+    background: rebeccapurple;
+    height: 200px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* Small Tablet */
+@media screen and (min-width: 320px) {
+    .upcoming-books-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .upcoming-books-list li {
+        width: calc(50% - 8px);
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 480px) {
+    .upcoming-books-list {
+        gap: 18px;
+    }
+
+    .upcoming-books-list li {
+        width: calc((100% / 3) - 12px);
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 800px) {
+    .upcoming-books-list li {
+        width: calc(25% - 14px);
+    }
+}
