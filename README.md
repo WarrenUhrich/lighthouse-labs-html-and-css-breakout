@@ -1,6 +1,6 @@
 # Lighthouse Labs | HTML and CSS Breakout
 
-[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-html-and-css-breakout/tree/2023.05.17-web-flex-20march2023) | [Vimeo Video Recording](#coming-soon)
+[GitHub Repository Branch](https://github.com/WarrenUhrich/lighthouse-labs-html-and-css-breakout/tree/2023.05.17-web-flex-20march2023) | [Vimeo Video Recording](https://vimeo.com/827811119/d694325438?share=copy)
 
 * [X] Common Elements
 * [X] External Stylesheets
